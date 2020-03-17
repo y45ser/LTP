@@ -32,16 +32,18 @@ jQuery( document ).ready(function( $ ) {
             $("header").removeClass("background-header");
           }
         });
-        if ($('.owl-clients').length) {
+        
+         if ($('.owl-clients').length) {
             $('.owl-clients').owlCarousel({
                 loop: true,
                 nav: false,
                 dots: true,
                 items: 1,
                 margin: 30,
-                autoplay: false,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
+                autoplay: true,
+                smartSpeed: 1500,
+                autoplayTimeout: 4000,
+				autoplayHoverPause:false,
                 responsive: {
                     0: {
                         items: 1,
@@ -69,9 +71,10 @@ jQuery( document ).ready(function( $ ) {
                 dots: true,
                 items: 1,
                 margin: 30,
-                autoplay: false,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
+                autoplay: true,
+                smartSpeed: 1500,
+                autoplayTimeout: 4000,
+				autoplayHoverPause:false,
                 responsive: {
                     0: {
                         items: 1,
@@ -99,9 +102,10 @@ jQuery( document ).ready(function( $ ) {
                 dots: true,
                 items: 1,
                 margin: 0,
-                autoplay: false,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
+                autoplay: true,
+                smartSpeed: 1500,
+                autoplayTimeout: 4000,
+				autoplayHoverPause:false,
                 responsive: {
                     0: {
                         items: 1,
@@ -122,7 +126,8 @@ jQuery( document ).ready(function( $ ) {
                 }
             });
         }
-
+		
+              
         $(".Modern-Slider").slick({
             autoplay:true,
             autoplaySpeed:10000,
@@ -174,5 +179,5 @@ jQuery( document ).ready(function( $ ) {
 
             j.preventDefault();
         });
- 
+	AOS.init( {duration:2000});
 });

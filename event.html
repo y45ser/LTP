@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/mystyle.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+	<link rel="stylesheet" href="assets/css/aos.css">
 
   </head>
 
@@ -69,8 +70,8 @@
         <div class="row">
           <div class="col-md-12">
             <div class="text-content">
-              <h4>événement</h4>
-              <h2>Titre d'événement</h2>
+              <h4 data-aos="zoom-in">événement</h4>
+              <h2 data-aos="zoom-in">Titre d'événement</h2>
             </div>
           </div>
         </div>
@@ -80,7 +81,7 @@
 
     <div class="best-features about-features">
       <div class="container">
-        <div class="row">
+        <div class="row" style="margin-bottom: 68px;">
           <div class="col-md-12">
             <div class="section-heading-event">
 			        <h2>photos d'événement</h2>
@@ -124,7 +125,13 @@
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright &copy; 2020 </p>
+              <p style="margin-bottom: 28px;color: white;">Copyright &copy; 2020 </p>
+			  <ul class="social-icons">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
             </div>
           </div>
         </div>
@@ -138,13 +145,15 @@
 
 
     <!-- Additional Scripts -->
-    <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
 	<script>
 	    $('.owl-carousel').owlCarousel({
 			loop:true,
 			margin:10,
 			nav:true,
+			autoplay: true,
+            smartSpeed: 1500,
+            autoplayTimeout: 4000,
 			responsive:{
 				0:{
 					items:1
@@ -158,9 +167,11 @@
 			}
 		})
 	</script>
+	<script src="assets/js/aos.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/isotope.js"></script>
     <script src="assets/js/accordions.js"></script>
+	<script src="assets/js/custom.js"></script>
 
 
    

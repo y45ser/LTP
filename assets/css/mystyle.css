@@ -48,7 +48,7 @@ ul.social-icons li a {
 }
 
 ul.social-icons li a:hover {
-	background-color: rgb(234,26,52);
+	background-color: rgb(251, 176, 59);
 	color: #fff;
 }
 
@@ -595,11 +595,11 @@ header .navbar {
 
 footer {
 	text-align: center;
+	background-color: #1f2837;
 }
 
 footer .inner-content {
-	border-top: 1px solid #eee;
-	margin-top: 60px;
+	margin-top: -15px;
 	padding: 60px 0px;
 }
 
